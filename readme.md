@@ -134,6 +134,8 @@ withKubeCredentials(kubectlCredentials: [[caCertificate: '', clusterName: 'EKS-1
 
 Note: relpace saamrajepatil in each deployment.yml and jenkinsfile to your dockerhub username
 
+![image](https://github.com/user-attachments/assets/dddf613e-749b-4e8a-84af-9e0c30eb1e4b)
+
 
 
 
