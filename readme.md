@@ -29,22 +29,16 @@ eksctl version
 Create EKS CLUSTER
 
 
+
 eksctl create cluster --name=EKS-1 \
                       --region=us-east-1 \
                       --zones=us-east-1a,us-east-1b \
                       --without-nodegroup
 
-
-
-
-
-
 eksctl utils associate-iam-oidc-provider \
     --region us-east-1 \
     --cluster EKS-1 \
     --approve
-
-
 
 eksctl create nodegroup --cluster=EKS-1 \
                        --region=us-east-1 \
@@ -62,7 +56,6 @@ eksctl create nodegroup --cluster=EKS-1 \
                        --full-ecr-access \
                        --appmesh-access \
                        --alb-ingress-access
-
 
 sudo apt install openjdk-17-jre-headless
 
