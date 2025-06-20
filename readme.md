@@ -27,21 +27,18 @@ eksctl version
 
 
 Create EKS CLUSTER
-
-
-
 eksctl create cluster --name=EKS-1 \
-                      --region=us-east-1 \
-                      --zones=us-east-1a,us-east-1b \
+                      --region=ap-south-1 \
+                      --zones=ap-south-1a,ap-south-1b \
                       --without-nodegroup
 
 eksctl utils associate-iam-oidc-provider \
-    --region us-east-1 \
+    --region ap-south-1 \
     --cluster EKS-1 \
     --approve
 
 eksctl create nodegroup --cluster=EKS-1 \
-                       --region=us-east-1 \
+                       --region=ap-south-1 \
                        --name=node2 \
                        --node-type=t3.medium \
                        --nodes=3 \
@@ -49,7 +46,7 @@ eksctl create nodegroup --cluster=EKS-1 \
                        --nodes-max=4 \
                        --node-volume-size=20 \
                        --ssh-access \
-                       --ssh-public-key=ansible \
+                       --ssh-public-key=DevOps \
                        --managed \
                        --asg-access \
                        --external-dns-access \
