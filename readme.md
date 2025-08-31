@@ -1,3 +1,7 @@
+Refer below pdf for more details:
+
+
+[Microservices Project .pdf](https://github.com/user-attachments/files/22067416/Microservices.Project.pdf)
 Create IAM user and attach required polices 
 
 create access keys
